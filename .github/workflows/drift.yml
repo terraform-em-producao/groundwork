@@ -1,0 +1,17 @@
+name: drift
+
+on:
+  schedule:
+    - cron: "0 11 * * 1-5" # dias úteis, 8h de Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  issues: write
+
+jobs:
+  drift:
+    uses: terraform-em-producao/.github/.github/workflows/terraform-drift.yml@v1
+    with:
+      diretorios: '["."]'

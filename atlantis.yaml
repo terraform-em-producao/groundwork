@@ -1,0 +1,11 @@
+version: 3
+parallel_plan: true
+parallel_apply: false
+
+projects:
+  - name: groundwork
+    dir: .
+    terraform_version: 1.17.1
+    autoplan:
+      enabled: true
+      when_modified: ["*.tf", ".terraform.lock.hcl"]
