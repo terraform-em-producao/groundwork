@@ -16,7 +16,7 @@ A base compartilhada da conta: o que todo o resto usa e que muda pouco.
 
 ## Como muda
 
-Só por PR. O Atlantis faz o plan, roda as policies e aplica (com aprovação) usando a role `terraform-exec-groundwork`, criada no `bootstrap` com permissão só de VPC, buckets `tep-shared-*`, budgets e configurações de conta.
+Só por PR. O Atlantis faz o plan, roda as policies e aplica usando a role `terraform-exec-groundwork`, criada no `bootstrap` com permissão só de VPC, buckets `tep-shared-*`, budgets e configurações de conta.
 
 ## Como outras stacks usam a rede
 
